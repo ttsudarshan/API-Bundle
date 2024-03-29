@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café API</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0dedb;
+            margin: 0;
+            padding: 0;
+        }
+        a{
+            text-decoration: none;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #6d4c41;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            margin-bottom: 20px;
+        }
+        .description {
+            text-align: center;
+            color: #4e342e;
+            margin-bottom: 30px;
+            font-size: 18px;
+        }
+        .endpoints {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .endpoint {
+            background-color: #bcaaa4;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            width: 80%;
+        }
+        .endpoint h2 {
+            color: #3e2723;
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 24px;
+        }
+        .endpoint a{
+            text-decoration: none;
+            color: #6d4c41;
+        }
+        .endpoint p {
+            color: #3e2723;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        /* Media queries for responsive design */
+        @media screen and (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+            .endpoint {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="flexible">
+        <h1>Café API</h1>
+        <div class="description">
+            <p>Step into the world of Café API, where the aroma of freshly brewed data fills the air. Take a sip of inspiration and explore our delicious endpoints!</p>
+        </div>
+        <div class="endpoints">
+            <div class="endpoint">
+                <a href="https://api-bundles-git-main-my-team-ec36f37e.vercel.app/quotes"><h2>/quotes</h2></a>
+                <p>Indulge in a rich blend of motivational quotes served straight from the heart of our API. Let each quote be your morning espresso, fuelling your day with positivity and drive.</p>
+            </div>
+            <div class="endpoint">
+                <a href="https://api-bundles-git-main-my-team-ec36f37e.vercel.app/horoscopes"><h2>/horoscope or /horoscope/{signNumber}</h2></a>
+                <p>Dive into the cosmic brew with our <em>Horoscope</em> endpoint. Savor the flavors of destiny as our API reveals the celestial messages written in the stars just for you.</p></a>
+            </div>
+            <div class="endpoint">
+                <a href="https://api-bundles-git-main-my-team-ec36f37e.vercel.app/today"><h2>/today</h2></a>
+                <p>What event is today ?! <em>Today</em> Keep in touch with the holidays and event info of today.</p></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
