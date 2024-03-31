@@ -3,10 +3,14 @@ const home = require("./routes/home");
 const quotes = require("./routes/quotes");
 const horoscopes = require("./routes/horoscopes");
 const today = require("./routes/today");
+const cors = require('cors');
+
 
 
 const app = express();
+
 app.use(express.json());
+app.use(cors());
 
 
 
