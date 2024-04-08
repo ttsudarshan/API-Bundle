@@ -4,6 +4,7 @@ const quotes = require("./routes/quotes");
 const horoscopes = require("./routes/horoscopes");
 const today = require("./routes/today");
 const rashifal = require("./routes/rashifal");
+const pokemon = require("./routes/pokemon");
 const cors = require('cors');
 
 
@@ -20,6 +21,7 @@ app.use("/quotes/", quotes);
 app.use("/horoscopes", horoscopes);
 app.use("/today", today);
 app.use("/rashifal", rashifal);
+app.use("/pokemon", pokemon);
 
 const port = process.env.PORT || 9001;
 app.listen(port, () => console.log(`Listening to port ${port}`));
